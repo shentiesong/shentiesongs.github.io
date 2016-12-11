@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人简历</title>
+	<!--fonts-->
+		<link href='http://fonts.useso.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+			<link href="css/bootstrap.css" rel="stylesheet">
+			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Peak Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->	
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/modernizr.custom.97074.js"></script>
+	<!-- js -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+</head>
+<body>
+<!-- banner -->
+<div id="home" class="banner">
+	<div class="container">
+		<div class="banner-grids">
+			<div class="col-md-4 navigation">
+				<div class="nav-left">
+					<div class="grid__item color-4">
+						<a class="link link--kumya" href="#home"><span data-letters="申铁松">申铁松</span></a>
+					</div>
+				</div>
+				<div class="nav-right">
+						<span class="menu"><img src="images/menu.png" alt="" /></span>
+							<nav class="cl-effect-1">
+								<ul class="nav1">
+									<li><a class="scroll" href="#home">首页</a></li>
+									<li><a class="scroll" href="#about">个人资料</a></li>
+									<li><a class="scroll" href="#portfolio">作品展示</a></li>
+									<li><a class="scroll" href="#services">掌握技能</a></li>
+									<li><a class="scroll" href="#contact">联系方式</a></li>
+								</ul>
+							</nav>
+							<!-- script for menu -->
+							<script> 
+								$( "span.menu" ).click(function() {
+								$( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								});
+								});
+							</script>
+							<!-- //script for menu -->
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-8 banner-image text-center">
+				<img src="images/banner.png" alt=""/>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<!-- 个人资料 -->
+<div id="about" class="about">
+	<div class="container">
+		<div class="about-info">
+				<h3>个人资料</h3>
+				<h4>Personal Data</h4>
+				
+		</div>
+		<div class="about-grids">
+		   	<div class="col-md-6 about-grid" id="sp">
+		   		<span>性别：男</span><br/>
+				<span>工作经历：3年</span><br/>								
+				<span>出生日期：1994.12.20</span><br/>
+				<span>QQ:1078998107</span><br/>
+				<span>现住址:北京市大兴区</span>
+		   	</div>
+		   	<div class="col-md-6 about-grid" id="sp1">
+		   		<span>意向：前端工程师</span><br/>
+		   		<span>籍贯：河南南阳</span><br/>
+		   		<span>爱好：打台球、旅游</span><br/>
+				<span>手机号：17768512381</span><br/>				
+				<span>邮箱：1078998107@qq.com</span>				
+		   	</div>
+		   	<div class="clearfix"> </div>
+		</div>   
+	</div>
+</div>
+<!-- //about -->
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+<!-- 使用工具 -->
+	<div class="our-skills">
+		<div class="container">
+			<div class="skill-info">
+				<h2>使用工具</h2>
+			</div>
+			<div class="skill-grids">
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-1"></div>
+						<p>Ps</p>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-2"></div>
+						<p>DW</p>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-3"></div>
+						<p>Sublime</p>
+					</div>
+					<div class="col-md-3 skills-grid text-center">
+						<div class="circle" id="circles-4"></div>
+						<p>HBuilder</p>
+					</div>
+					<div class="clearfix"> </div>
+				 <script type="text/javascript" src="js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852'], ['#ced7df', '#76b852']
+									];
+								for (var i = 1; i <= 5; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 50 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 10,
+										text:       '0%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+			</div>
+		</div>	
+	</div>
+	<div class="gz">工作经历</div>
+	<div class="jl">
+		<div class="lx">
+			<p>2014年</p><br />
+			郑州来为科技股份有限公司 | WEB 前端工程师<br />
+			项目描述：世纪博联网络有限公司客户管理系统项目职责：用 Node Js 搭建的后台，进行 MySQL 数据库数据的调取，用 angular js 实现增删改查老客户的信息。
+		</div>
+		<div class="wx">
+			<p>2015年</p><br />
+			无锡东野科技股份有限公司 | WEB 前端工程师<br />
+			项目描述：东野广告有限公司客户管理系统项目职责：用 Node Js 搭建的后台，进行 MySQL 数据库数据的调取，用 angular js 实现增删改查老客户的信息。
+		</div>
+		<div class="wxl">
+			<p>2016年</p><br />
+			无锡正科科技股份有限公司 | WEB 前端工程师<br />
+			项目描述：项目描述：为企业做的一个关于美食的电商网站。<br />
+项目职责：进行移动端页面书写 HTML5+CSS3+Js，jquery 为主实现交互效果,终端兼容性，json 调取后台数据。
+		</div>
+	</div>
+	
+	
+<!-- //技术-->
+<div id="portfolio" class="gallery">
+		<div class="container">
+				<script src="js/jquery.chocolat.js"></script>
+			<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+			<!--light-box-files -->
+			<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$('.gallery a').Chocolat();
+			});
+			</script>
+			<h3>部分作品</h3>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a1.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a2.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a3.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a4.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>	
+						<a href="images/a5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a5.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a6.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a7.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a1.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a2.jpg" alt="" />
+							<div>
+								<h5>VIEW</h5>
+								
+							</div>
+						</a>
+					</li>
+					<div class="clearfix"> </div>
+				</ul>
+			</section>
+				<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+				<script type="text/javascript">
+					$(function() {
+						$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+					});
+				</script>
+        </div>	
+</div>
+<!--//gallery-->
+<!--services-->
+<div id="services" class="services">
+	<div class="container">
+		<div class="ser-head">
+			<h3>掌握技能</h3>
+		</div>
+		<div class="wel-grids">
+			<div class="col-md-4 wel-grid text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span >div+css</span>
+					</figure>
+					<h3>DIV+CSS是WEB设计标准</h3>
+					<p>它是一种网页的布局方法。与传统中通过表格(table)布局定位的方式不同，它可以实现网页页面内容与表现相分离。</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid btm-gre text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span>html</span>
+					</figure>
+					<h3>HTML是超文本标记语言</h3>
+					<p>HTML文本是由 HTML命令组成的描述性文本，HTML 命令可以说明文字、 图形、动画、声音、表格、链接等。 HTML的结构包括头部 (Head)、主体 (Body) 两大部分。头部描述浏览器所需的信息，主体包含所要说明的具体内容。</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span>jquery</span>
+					</figure>
+					<h3>jQuery是一套跨浏览器的JavaScript库</h3>
+					<p> 它简化HTML与JavaScript之间的操作。由John Resig在2006年1月的BarCamp NYC上发布第一个版本。目前是由 Dave Methvin 领导的开发团队进行开发。全球前10000个访问最高的网站中，有59%使用了jQuery，是目前最受欢迎的JavaScript库。</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid btm-gre text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span>angular</span>
+					</figure>
+					<h3>AngularJS 是一个WEB前端框架。</h3>
+					<p>它能让你使用HTML作为模板语言，通过扩展HTML的语法，让你能更清楚、简洁地构建你的应用组件。它的创新点在于，利用 数据绑定 和 依赖注入，它使你不用再写大量的代码了。这些全都是通过浏览器端的Javascript实现，这也使得它能够完美地和任何服务器端技术结合。</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span>grunt</span>
+					</figure>
+					<h3>Grunt是基于Node.js的项目构建工具</h3>
+					<p>它可以自动运行你所设定的任务。Grunt拥有数量庞大的插件,几乎任何你所要做的事情都可以用Grunt实现。</p>
+				</div>
+			</div>
+			<div class="col-md-4 wel-grid btm-gre text-center">
+				<div class="btm-clr">
+					<figure class="icon">
+						<span>bootstrap</span>
+					</figure>
+					<h3>Bootstrap是前端框架</h3>
+					<p>Bootstrap，来自 Twitter，是目前最受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--//news-->
+<!-- get-in -->
+<div id="contact" class="get-in-touch">
+	<div class="container">
+		<div class="get-info text-center">
+			<h3>人生格言</h3>
+			<h4><i>Feel Free To Contact Us</i></h4>
+			<p>有苦有乐的人生是充实的；有成有败的人生是合理的；有得有失的人生是公平的；人生坎坷不平才有价值。有赢就有输，有成就有败，有得就有失；要成就必须去承担，要光明必须接受黑暗，要事业必须去付出。</p>
+		</div>
+	</div>
+</div>
+<!-- //get-in -->
+<!-- contact-us -->
+<div class="contact-us">
+	<div class="container">
+		<div class="contact-grids">
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></div>
+				<p>现住址：北京市大兴区西红门</p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+				<p><a href="mailto:info@example.com">邮箱：1078998107@qq.com</a></p>
+			</div>
+			<div class="col-md-4 contact-grid text-center">
+				<div class="point-icon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></div>
+				<p>手机号：17768512381</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
